@@ -67,7 +67,7 @@ public class driver
         JobClient.runJob(conf);
     }
 }
-javac -classpath $(hadoop classpath) -d . *.java
+javac  -d . *.java
 echo Main-Class: wordcount.driver > Manifest.txt
 jar cfm wordcount.jar Manifest.txt wordcount/*.class
 hadoop jar wordcount.jar input output
