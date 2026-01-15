@@ -14,4 +14,7 @@ mini.saveAsTextFile(sys.argv[2])
 
 maxi=temp.reduceByKey(lambda a,b:a if a>b else b)
 maxi.saveAsTextFile(sys.argv[3])
-#spark-submit weather.py weather_report.txt maxi mini
+spark-submit weather.py input.txt minimum maximum
+cat minimum/*
+cat maximum/*
+
